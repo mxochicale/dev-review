@@ -19,31 +19,38 @@ Once your changes are merged into `main` the site will be automatically built an
 
 ## Previewing changes locally
 
-1. Install hugo extended ([installation
-   instructions](https://gohugo.io/getting-started/installing)). The
-   "extended" hugo version is required to enable some features of [the
-   LoveIt theme](https://hugoloveit.com/), such as mermaid diagrams.
+1. Install hugo extended ([installation instructions](https://gohugo.io/getting-started/installing)). 
+The "extended" hugo version is required to enable some features of [the LoveIt theme](https://hugoloveit.com/), such as mermaid diagrams.
+See commands to install hugo based on your Operating system.
+- macOS
+  ```
+  $ brew install hugo
+  ```
+- Windows
+  ```
+  $ choco install hugo -confirm
+  ```
+- GNU/Linux 
+  ```
+  $ sudo apt-get install hugo
+  ```
+- [other options](https://gohugo.io/getting-started/installing/)
 
 2. Clone this repo
-
 	```
 	git clone --recurse-submodules git@github.com:ResearchCodeReviewCommunity/dev-review.git
 	```
 	
 	If you've cloned this repo before without the `--recurse-submodules` options, initialise your local git submodule config with
-	
 	```
 	git submodule init
 	```
-	
 	and update:
-	
 	```
 	git submodule update
 	```
 	
 3. Build and serve the website locally
-
 	```
 	cd site/ && hugo serve --disableFastRender
 	```
