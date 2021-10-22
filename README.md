@@ -15,17 +15,17 @@ The "extended" hugo version is required to enable some features of [the LoveIt t
 See commands to install hugo based on your Operating system.
 - macOS
 ```
-$ brew install hugo
+brew install hugo
 ```
 - Windows
 ```
-$ choco install hugo -confirm
+choco install hugo -confirm
 ```
-- GNU/Linux 
+- GNU/Linux (Debian and Ubuntu)
 ```
-$ sudo apt-get install hugo
+snap install hugo --channel=extended
 ```
-- [other options](https://gohugo.io/getting-started/installing/)
+- See [documentation](https://gohugo.io/getting-started/installing/) for other options and furhter information. 
 
 ## Clone this repository
 After generating your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).  
